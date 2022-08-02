@@ -2,10 +2,28 @@
     <script>
         //Criar uma função para verificar se o número é primo
 
-        var x
-
-        function verificaNumeroPrimo(numero) {
+        var resultado;
+        function calculo(operacao, num1, num2) {
+            if (operacao === "SOMA") {
+                resultado = num1 + num2; 
+            } else if (operacao === "SUBTRACAO") {
+                resultado = num1 - num2
+            } else if (operacao === "MULTIPLICACAO") {
+                resultado = num1 * num2
+            } else if (operacao === "DIVISAO") {
+                resultado = num1 / num2
+            } else if (operacao === "RESTO") {
+                resultado = num1 % num2
+            } else if (operacao === "PORCENTAGEM") {
+                resultado = num1 * num2 / 100;
+            } else {
+                console.log("Operacao invalida");
+            }
             
+
+            return resultado;
         }
+
+        
     </script>
 </html>
